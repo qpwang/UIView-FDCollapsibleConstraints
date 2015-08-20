@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="180" id="KGk-i7-Jjw" customClass="BugTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="432" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tan-LT-eu7">
+                        <rect key="frame" x="8" y="79" width="28" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forkingdog" translatesAutoresizingMaskIntoConstraints="NO" id="ANA-AC-Sm7">
+                        <rect key="frame" x="44" y="68" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="FaF-SS-8dg"/>
+                            <constraint firstAttribute="height" constant="44" id="p9s-Ph-HKH"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="autoCollapse" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outletCollection property="fd_collapsibleConstraints" destination="FaF-SS-8dg" id="xdX-OY-2x4"/>
+                            <outletCollection property="fd_collapsibleConstraints" destination="IBh-RM-YFc" id="evd-2q-Eyw"/>
+                        </connections>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forkingdog" translatesAutoresizingMaskIntoConstraints="NO" id="4QG-gG-sQa">
+                        <rect key="frame" x="100" y="79" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="U9c-3P-dxv"/>
+                            <constraint firstAttribute="height" constant="22" id="pUb-6Y-png"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tan-LT-eu7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="9Sb-Xk-oqH"/>
+                    <constraint firstItem="ANA-AC-Sm7" firstAttribute="leading" secondItem="tan-LT-eu7" secondAttribute="trailing" constant="8" id="DNI-5K-TGC"/>
+                    <constraint firstItem="ANA-AC-Sm7" firstAttribute="centerY" secondItem="tan-LT-eu7" secondAttribute="centerY" id="H0h-Bk-h6Z"/>
+                    <constraint firstItem="4QG-gG-sQa" firstAttribute="leading" secondItem="ANA-AC-Sm7" secondAttribute="trailing" constant="12" id="IBh-RM-YFc"/>
+                    <constraint firstAttribute="centerY" secondItem="tan-LT-eu7" secondAttribute="centerY" id="J3K-7x-Cre"/>
+                    <constraint firstItem="4QG-gG-sQa" firstAttribute="centerY" secondItem="tan-LT-eu7" secondAttribute="centerY" id="ZEH-cM-HNq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bigDogImageView" destination="ANA-AC-Sm7" id="6Rs-3f-5sH"/>
+                <outlet property="smallDogImageView" destination="4QG-gG-sQa" id="gob-fD-UuZ"/>
+            </connections>
+            <point key="canvasLocation" x="386" y="342"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="forkingdog" width="128" height="128"/>
+    </resources>
+</document>

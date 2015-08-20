@@ -19,6 +19,9 @@
 		4A40B0A21ADCE7620018D61D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A40B0A11ADCE7620018D61D /* Images.xcassets */; };
 		4A40B0A51ADCE7620018D61D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A40B0A31ADCE7620018D61D /* LaunchScreen.xib */; };
 		4A40B0C81ADCE8120018D61D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A40B0C71ADCE8120018D61D /* Main.storyboard */; };
+		75EC87A01B85CFE500E14415 /* BugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EC879F1B85CFE500E14415 /* BugViewController.m */; };
+		75EC87A41B85D0A200E14415 /* BugTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EC87A21B85D0A200E14415 /* BugTableViewCell.m */; };
+		75EC87A51B85D0A200E14415 /* BugTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75EC87A31B85D0A200E14415 /* BugTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,11 @@
 		4A40B0A11ADCE7620018D61D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4A40B0A41ADCE7620018D61D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4A40B0C71ADCE8120018D61D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		75EC879E1B85CFE500E14415 /* BugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BugViewController.h; sourceTree = "<group>"; };
+		75EC879F1B85CFE500E14415 /* BugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BugViewController.m; sourceTree = "<group>"; };
+		75EC87A11B85D0A200E14415 /* BugTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BugTableViewCell.h; sourceTree = "<group>"; };
+		75EC87A21B85D0A200E14415 /* BugTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BugTableViewCell.m; sourceTree = "<group>"; };
+		75EC87A31B85D0A200E14415 /* BugTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BugTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +124,7 @@
 		4A40B0931ADCE7620018D61D /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				75EC879D1B85CFC200E14415 /* Bug Demo */,
 				48F3CBC61AE738D3008CCACA /* Cell Demo */,
 				48F3CBCD1AE738D3008CCACA /* View Demo */,
 				48F3CBB11AE62255008CCACA /* UITableView+FDTemplateLayoutCell */,
@@ -138,6 +147,18 @@
 				4A40B0961ADCE7620018D61D /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75EC879D1B85CFC200E14415 /* Bug Demo */ = {
+			isa = PBXGroup;
+			children = (
+				75EC879E1B85CFE500E14415 /* BugViewController.h */,
+				75EC879F1B85CFE500E14415 /* BugViewController.m */,
+				75EC87A11B85D0A200E14415 /* BugTableViewCell.h */,
+				75EC87A21B85D0A200E14415 /* BugTableViewCell.m */,
+				75EC87A31B85D0A200E14415 /* BugTableViewCell.xib */,
+			);
+			name = "Bug Demo";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +220,7 @@
 			files = (
 				4A40B0A51ADCE7620018D61D /* LaunchScreen.xib in Resources */,
 				4A40B0A21ADCE7620018D61D /* Images.xcassets in Resources */,
+				75EC87A51B85D0A200E14415 /* BugTableViewCell.xib in Resources */,
 				4A40B0C81ADCE8120018D61D /* Main.storyboard in Resources */,
 				48F3CBB61AE6253A008CCACA /* data.json in Resources */,
 			);
@@ -213,7 +235,9 @@
 			files = (
 				48F3CBD01AE738D3008CCACA /* FDTableViewController.m in Sources */,
 				48F3CBB41AE62255008CCACA /* UITableView+FDTemplateLayoutCell.m in Sources */,
+				75EC87A01B85CFE500E14415 /* BugViewController.m in Sources */,
 				48F3CBCF1AE738D3008CCACA /* FDTableViewCell.m in Sources */,
+				75EC87A41B85D0A200E14415 /* BugTableViewCell.m in Sources */,
 				48FC0BF51AE20ED500ECA845 /* UIView+FDCollapsibleConstraints.m in Sources */,
 				4A40B09A1ADCE7620018D61D /* FDAppDelegate.m in Sources */,
 				4A40B0971ADCE7620018D61D /* main.m in Sources */,
